@@ -7,5 +7,10 @@ import java.util.List;
  */
 public interface TestDao {
     void removeUser(int id);
-    List<String> showUsers();
+    String showUsers();
+    int getCachedUsersCount();
+    int getRealUsersCount();
+    void userCacheEvict();
+    void dataCacheEvict();
+    int getRandom();
 }

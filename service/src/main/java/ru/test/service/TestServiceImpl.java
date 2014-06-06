@@ -18,8 +18,8 @@ public class TestServiceImpl implements TestService {
     private TestDao testDao;
 
     @Override
-    public List<String> getUsers() {
-        return testDao.showUsers();
+    public String getUsers() {
+        return testDao.showUsers() + "( real count = "+testDao.getRealUsersCount()+")";
     }
 
     @Override
@@ -31,5 +31,25 @@ public class TestServiceImpl implements TestService {
     public void removeUserWithException(int userId) {
         testDao.removeUser(userId);
         throw new RuntimeException("ololo");
+    }
+
+    @Override
+    public int getRandom() {
+        return testDao.getRandom();
+    }
+
+    @Override
+    public void userCacheEvict() {
+        testDao.userCacheEvict();
+    }
+
+    @Override
+    public void dataCacheEvict() {
+        testDao.dataCacheEvict();
+    }
+
+    @Override
+    public int showUsers() {
+        return 1;
     }
 }
