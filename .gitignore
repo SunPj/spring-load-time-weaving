@@ -1,0 +1,16 @@
+settings.xml
+atlassian-ide-plugin.xml
+m2
+target
+.classpath
+.settings
+.project
+.idea
+*.iml
+.gwt
+.gradle
+templatesync/build
+bin
+*~
+.gradle
+libpeerconnection.log
