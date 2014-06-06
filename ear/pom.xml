@@ -19,6 +19,12 @@
             <version>${project.version}</version>
             <type>war</type>
         </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>some-ejb</artifactId>
+            <version>${project.version}</version>
+            <type>ejb</type>
+        </dependency>
     </dependencies>
 
     <build>
@@ -40,6 +46,11 @@
                             <bundleFileName>web.war</bundleFileName>
                             <contextRoot>/testear</contextRoot>
                         </webModule>
+                        <ejbModule>
+                            <groupId>${project.groupId}</groupId>
+                            <artifactId>some-ejb</artifactId>
+                            <bundleFileName>some-ejb.jar</bundleFileName>
+                        </ejbModule>
                     </modules>
                 </configuration>
             </plugin>

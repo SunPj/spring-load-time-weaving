@@ -13,6 +13,7 @@
         <module>ear</module>
         <module>model</module>
         <module>cache</module>
+        <module>some-ejb</module>
     </modules>
     
     <properties>
