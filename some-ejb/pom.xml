@@ -13,11 +13,11 @@
     <packaging>ejb</packaging>
 
     <dependencies>
-        <dependency>
+<!--        <dependency>
             <groupId>${project.groupId}</groupId>
             <artifactId>service</artifactId>
             <version>${project.version}</version>
-        </dependency>
+        </dependency>-->
         <dependency>
             <groupId>org.apache.openejb</groupId>
             <artifactId>openejb-core</artifactId>
